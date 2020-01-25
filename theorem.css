@@ -84,3 +84,8 @@ li {
 body {
   animation: all 1s linear;
 }
+
+iframe {
+  border: 1px solid #080808;
+  box-shadow: -0.06em 0 red, 0.06em 0 cyan;
+}

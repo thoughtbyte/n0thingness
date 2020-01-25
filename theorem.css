@@ -1,0 +1,69 @@
+body {
+  background-color: #fbfbfb;
+  color: #080808;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 1.25;
+}
+
+main {
+  padding: 96px 1.5em;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+p,
+h1,
+ol {
+  margin: 24px auto;
+  max-width: 600px;
+}
+
+a {
+  color: #080808;
+  text-decoration: none;
+}
+
+.arabic {
+  display: inline-block;
+  text-align: right;
+  width: 100%;
+}
+
+iframe {
+  height: 400px;
+  width: 100%;
+}
+
+#loop {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+a:hover,
+button:hover,
+a:focus,
+button:focus,
+a:active,
+button:focus {
+  text-shadow: -0.06em 0 red, 0.06em 0 cyan;
+}
+
+.sublemma {
+  margin: 8px auto;
+}
+
+ol {
+  list-style-position: inside;
+  padding: 0;
+}
+
+li {
+  text-indent: -2em;
+  padding-left: 2em;
+}

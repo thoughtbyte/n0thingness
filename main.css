@@ -1,0 +1,41 @@
+body {
+  background-color: #080808;
+  color: #fbfbfb;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.theorems {
+  margin: 1.5em;
+  position: absolute;
+  top: 0;
+}
+
+.theorem {
+  margin: 0;
+}
+
+a {
+  color: #fbfbfb;
+}
+
+.∅ {
+  color: #fbfbfb;
+  font-size: 96px;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-shadow: -0.06em 0 red, 0.06em 0 cyan;
+}

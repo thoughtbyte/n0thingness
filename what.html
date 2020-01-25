@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      property="og:image"
+      content="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Vantablack_01.JPG/300px-Vantablack_01.JPG"
+    />
+    <title>‽</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="theorem.css" />
+  </head>
+  <body>
+    <main>
+      <h1>what is this?</h1>
+      <p id="explanation"></p>
+      <p>
+        <button id="loop">/loop</button>
+      </p>
+      <p>
+        <a href="index.html">/recur</a>
+      </p>
+    </main>
+    <script>
+      var shuffle = function shuffle(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+          let j = Math.floor(Math.random() * (i + 1));
+
+          [array[i], array[j]] = [array[j], array[i]];
+        }
+      };
+      var explanations = [
+        "the lack of an explanation",
+        "the lack of the myst of familiarity",
+        "<span class='arabic'>لغة غير مألوفة</span>",
+        "01101111 01101110 01100101 01110011 00100000 01100001 01101110 01100100 00100000 01111010 01100101 01110010 01101111 01100101 01110011",
+        "<iframe src='https://n0thingness.com'></iframe>",
+        "<a href='https://www.youtube.com/watch?v=tS27pVDQXPs' target='_blank' rel='noopener'>/an unusual song perhaps</a>",
+        "<a href='https://www.youtube.com/watch?v=JeaBNAXfHfQ' target='_blank' rel='noopener'>/a song for the spirit</a>",
+        "<a href='https://www.youtube.com/watch?v=RU92YBxAI-g' target='_blank' rel='noopener'>/a sad yet strangely uplifting song perhaps</a>",
+        "<a href='https://www.youtube.com/watch?v=GdvD3sJh1M0' target='_blank' rel='noopener'>/a beautiful song perhaps</a>",
+        "<a href='https://www.youtube.com/watch?v=ZbFM3rn4ldo' target='_blank' rel='noopener'>/the beauty of a flower</a>",
+        "AN EXPLORATION OF MY BRAIN AMUSING ITSELF, I.E. AN EXPLORATION OF AN INFINITESIMALLY SMALL SUBSET OF THE UNIVERSE AMUSING ITSELF, I.E. AN EXPLORATION OF AN INFINITESIMALLY SMALL SUBSET OF THE UNIVERSE AMUSING ITSELF BY ATTEMPTING TO THINK ABOUT THE INFINITELY LARGE SUPERSET OF LARGER SUBSETS OF THE UNIVERSE LIKE MATHS AND WAR AND PHILOSOPHY AND LOVE AND AESTHETICS AND SANITY AND ITSELF AS IT MANIFESTS ITSELF IN OTHERS AND NOTHING AND THE OCCASIONAL SPIRITUAL ANIMALISMS AND",
+        "an elegant waste of time",
+        "<a href='https://www.youtube.com/watch?v=UZRZZJ0DUQs' target='_blank' rel='noopener'>/a sad song about memory perhaps</a>",
+        "art therapy in public?",
+        "I don't know but it's alive",
+      ];
+      var explanation = document.querySelector("#explanation");
+      var loopButton = document.querySelector("#loop");
+      shuffle(explanations);
+      loopButton.addEventListener("click", () => {
+        if (explanations.length > 0) {
+          explanation.innerHTML = explanations.pop();
+        } else {
+          explanation.innerHTML = "end loop;";
+          loopButton.style.display = "none";
+        }
+      });
+      explanation.innerHTML = "begin; listen to the music";
+    </script>
+  </body>
+</html>

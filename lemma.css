@@ -1,0 +1,28 @@
+body {
+  background-color: #080808;
+  color: #fbfbfb;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 1.25;
+}
+
+main {
+  padding: 96px 1.5em;
+}
+
+p {
+  margin: 24px auto;
+  max-width: 600px;
+}
+
+a {
+  color: #fbfbfb;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-shadow: -0.06em 0 red, 0.06em 0 cyan;
+}

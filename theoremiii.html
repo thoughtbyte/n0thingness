@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      property="og:image"
+      content="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Vantablack_01.JPG/300px-Vantablack_01.JPG"
+    />
+    <title></title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="theorem.css" />
+  </head>
+  <body>
+    <main>
+      <h1>the third nothingness theorem</h1>
+      <div id="text">
+        <p>please don't go</p>
+      </div>
+    </main>
+    <script>
+      var recur = document.querySelector("#recur");
+      var recurLink = document.querySelector("#recur a");
+      var text = document.querySelector("#text");
+      var addText = function addText(newText) {
+        text.innerHTML = text.innerHTML + newText;
+      };
+      var clearText = function addText(newText) {
+        text.innerHTML = "";
+      };
+      setTimeout(() => addText("<p>please</p>"), 6000);
+      setTimeout(
+        () => addText("<p>I know this is difficult to understand</p>"),
+        8000
+      );
+      setTimeout(() => addText("<p>but</p>"), 9000);
+      setTimeout(() => addText("<p>I never stopped loving you</p>"), 10500);
+      setTimeout(() => addText("<p>I began to...</p>"), 14500);
+      setTimeout(() => addText("<p>I began to hate myself</p>"), 17000);
+      setTimeout(() => clearText(), 23000);
+      setTimeout(
+        () => addText("<p>I began to hate <strike>myself<strike></p>"),
+        25000
+      );
+      setTimeout(
+        () => addText("<p>there is a certain power in this</p>"),
+        30000
+      );
+      setTimeout(() => addText("<p>a freedom</p>"), 33000);
+      setTimeout(
+        () => addText("<p>it's a power free from responsibility</p>"),
+        34500
+      );
+      setTimeout(() => addText("<p>free from accountability</p>"), 38000);
+      setTimeout(
+        () =>
+          addText(
+            "<p>this power is what you feel when you stare into the abyss and the abyss stares back</p>"
+          ),
+        40000
+      );
+      setTimeout(() => clearText(""), 46000);
+      setTimeout(
+        () => addText("<p>how do we begin to forgive ourselves?</p>"),
+        49000
+      );
+      setTimeout(() => addText("<p>how do we let go of the past?</p>"), 51500);
+      setTimeout(() => addText("<p>the guilt</p>"), 53000);
+      setTimeout(() => addText("<p>the shame</p>"), 54000);
+      setTimeout(
+        () => addText("<p><strike>the broken sense of self</strike></p>"),
+        55000
+      );
+      setTimeout(
+        () => addText("<p>we can acknowledge that this power was tempting</p>"),
+        58000
+      );
+      setTimeout(() => addText("<p>that is where we can start</p>"), 60500);
+      setTimeout(() => {
+        clearText("");
+        document.body.style.backgroundColor = "#080808";
+        document.body.style.color = "#fbfbfb";
+      }, 66000);
+      setTimeout(() => addText("<p>I need to be alone now</p>"), 69000);
+      setTimeout(() => addText("<p>at least for a little while</p>"), 73000);
+      setTimeout(() => addText("<p>I hope you'll understand</p>"), 77000);
+      setTimeout(
+        () =>
+          (window.location.href =
+            "https://www.youtube.com/watch?v=8fkx2hrLU1s"),
+        83000
+      );
+    </script>
+  </body>
+</html>

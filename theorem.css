@@ -60,6 +60,7 @@ button:focus {
 
 ol {
   list-style-position: inside;
+  list-style-type: lower-alpha;
   padding: 0;
 }
 

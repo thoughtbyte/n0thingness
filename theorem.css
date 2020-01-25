@@ -38,7 +38,8 @@ iframe {
   width: 100%;
 }
 
-#loop {
+#loop,
+#invite {
   background: transparent;
   border: none;
   cursor: pointer;

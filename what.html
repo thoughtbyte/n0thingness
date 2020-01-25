@@ -52,17 +52,40 @@
         "<a href='https://www.youtube.com/watch?v=UZRZZJ0DUQs' target='_blank' rel='noopener'>/a sad song about memory</a>",
         "art therapy in public?",
         "I don't know but it's alive",
-        "<a href='https://www.youtube.com/watch?v=ljqra3BcqWM' target='_blank' rel='noopener'>/a fucking war story, aka the only good TED talk</a>",
+        "an invitation to <button id='invite'>/<span>feel</span></button>",
+        "a love letter to past selves",
+        "<a href='https://www.youtube.com/watch?v=ljqra3BcqWM' target='_blank' rel='noopener'>/a fucking war story</a>",
+      ];
+      var invitations = [
+        "cry",
+        "smile",
+        "forgive ourselves",
+        "get lost",
+        "think",
       ];
       var explanation = document.querySelector("#explanation");
       var loopButton = document.querySelector("#loop");
       shuffle(explanations);
+      shuffle(invitations);
       loopButton.addEventListener("click", () => {
         if (explanations.length > 0) {
           explanation.innerHTML = explanations.pop();
         } else {
           explanation.innerHTML = "end loop;";
           loopButton.style.display = "none";
+        }
+
+        var inviteButton = document.querySelector("#invite");
+
+        if (inviteButton) {
+          var inviteText = document.querySelector("#invite span");
+          inviteButton.addEventListener("click", () => {
+            if (invitations.length > 0) {
+              inviteText.innerHTML = invitations.pop();
+            } else {
+              inviteText.innerHTML = "end inner loop;";
+            }
+          });
         }
       });
       explanation.innerHTML = "begin; listen to the music";

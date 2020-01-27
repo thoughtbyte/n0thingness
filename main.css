@@ -3,6 +3,8 @@ body {
   color: #fbfbfb;
   font-family: "Courier New", Courier, monospace;
   font-size: 18px;
+  letter-spacing: 0.25px;
+  line-height: 1.25;
 }
 
 main {
@@ -14,7 +16,12 @@ main {
 }
 
 .theorem {
-  margin: 8px 0;
+  margin: 4px 0;
+}
+
+main p {
+  margin: 0;
+  text-align: center;
 }
 
 a {
@@ -23,9 +30,7 @@ a {
 
 .∅ {
   color: #fbfbfb;
-  display: block;
   font-size: 96px;
-  text-align: center;
   text-decoration: none;
 }
 
